@@ -17,6 +17,7 @@
     </template>
 
   </Layout>
+  <Spacer />
   <Footer />
 </template>
 
@@ -26,6 +27,7 @@ import HomeHero from "./HomeHero.vue";
 import Footer from "./TheFooter.vue";
 import Comments from "./Comments.vue";
 import Page from "./Page.vue";
+import Spacer from "./shared/Spacer.vue";
 import Category from "./Category.vue";
 import Title from "./Title.vue";
 const { Layout } = DefaultTheme;

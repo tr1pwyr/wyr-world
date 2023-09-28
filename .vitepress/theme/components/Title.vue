@@ -29,8 +29,3 @@ onContentUpdated(() => {
 });
 
 </script>
-
-<style scoped>
-
-
-</style>

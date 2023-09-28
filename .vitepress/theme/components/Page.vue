@@ -1,6 +1,6 @@
 <template>
   
-  <Masthead />
+  <MastHead />
 
   <div class="blogList">
 
@@ -62,7 +62,7 @@
 import { ref } from "vue";
 import { transDate } from "../utils";
 
-import Masthead from "./Masthead.vue";
+import MastHead from "./MastHead.vue";
 import Sponsor from "./Sponsor.vue";
 
 import { useData, withBase } from "vitepress";

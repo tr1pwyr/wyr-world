@@ -29,6 +29,10 @@
   padding: 0 0 0 5px
 }
 
+.VPDoc .content .content-container .title{
+  font-size: 2rem;
+}
+
 .dark .title {
   color: #29f4de !important
 }
@@ -146,24 +150,17 @@ span.gt-ico-tip {
   color: var(--vp-c-brand) !important
 }
 
-.banner {
-  padding-top: 1rem !important
-}
-
-.tagResults .title,
-.yearItem .title {
+.tagResults .title, .yearItem .title {
   padding: 5px 10px !important;
   border-radius: .2rem !important
 }
 
-.tagResults .title:hover,
-.yearItem .title:hover {
+.tagResults .title:hover, .yearItem .title:hover {
   background: var(--vp-c-brand) !important;
   color: #fff !important
 }
 
-.dark .tagResults .title:hover,
-.dark .yearItem .title:hover {
+.dark .tagResults .title:hover, .dark .yearItem .title:hover {
   background: var(--vp-c-brand) !important;
   color: #000 !important
 }
@@ -172,7 +169,7 @@ blockquote p {
   font-size: 1.15rem !important;
   line-height: 1.33 !important;
   color: #000 !important;
-  padding: 10px 40px 10px 0 !important;
+  padding: 10px 3.33rem 10px 0 !important;
   margin: 1rem 0 !important
 }
 
@@ -188,6 +185,14 @@ hr {
 
 .dark hr {
   background-image: linear-gradient(to right, #05100e, black, #05100e) !important
+}
+
+.blogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  column-gap: 5px
 }
 
 .blog {
@@ -226,7 +231,6 @@ hr {
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
-  /* margin-top: 24px */
 }
 
 .blogList {
@@ -253,7 +257,7 @@ p.description {
 
 .date {
   padding: 0 0 2px 5px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.25rem;
   margin-bottom: .75em;
   border-bottom: 3px solid #FFF;
@@ -320,14 +324,6 @@ p.description {
   object-fit: cover
 }
 
-.blogContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: left;
-  column-gap: 5px
-}
-
 .meta {
   padding-top: 10px
 }
@@ -359,8 +355,6 @@ p.description {
 a.sponsor {
   color: var(--vp-c-brand)
 }
-
-
 
 @media screen and (max-width: 767px) {
   .flex-item {

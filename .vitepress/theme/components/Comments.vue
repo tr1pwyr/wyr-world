@@ -30,4 +30,9 @@ onContentUpdated(() => {
   gitalk.render("gitalk-container");
 });
 </script>
-<style scoped></style>
+<style scoped>
+.gitalk-container{
+  display: block;
+  width: 100%;
+}
+</style>

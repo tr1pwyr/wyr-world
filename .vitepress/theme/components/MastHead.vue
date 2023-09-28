@@ -1,18 +1,15 @@
 <template>
   <div class="masthead">
-
     <div class="masthead-content">
-      <img src="/tr1pwyr.webp" width="90" height="90" alt="tr1pwyr's WyrWorld" />
-
+      <img src="/tr1pwyr.webp" width="90" height="90" 
+        alt="tr1pwyr's WyrWorld Tech Blog" />
       <div>
         <h1 class="title">WyrWorld</h1>
         <p class="description">
           Independent Tech Blog by Tr1pWyr
         </p>
       </div>
-
     </div>
-
   </div>
 </template>
 
@@ -39,6 +36,6 @@
 }
 
 .description {
-  margin: 1em 0;
+  margin: .5rem 0;
 }
 </style>
