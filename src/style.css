@@ -11210,7 +11210,7 @@ fieldset:disabled .btn {
   -moz-box-shadow: -1px 14px 14px -11px rgba(0,0,0,0.75)!important;
 }
 
-
+/* When the screen is big have the more info side by side */
 .hero-section {
   text-align: center;
   margin: 133px 1rem 0 1rem;
@@ -11284,9 +11284,9 @@ p {
 .call-to-action .call-to-action-wrapper {
   max-width: 1505px;
   width: 100%;
-  padding: 87px 90px 81px 0px;
+  padding: 0 0 0 66px;
   border-radius: 2rem;
-  background: rgba(220, 234, 255, 0.59);
+  background: rgba(0,0,0,0);
 }
 
 .call-to-action .call-to-action-wrapper .call-to-action-content .title {
@@ -11333,22 +11333,6 @@ p {
   margin-bottom: 29px;
 }
 
-.lead-story .lead-story-wrapper .lead-story-content .coinzar-system {
-  opacity: 0.7;
-}
-
-.lead-story .lead-story-wrapper .lead-story-content .coinzar-system .coinzar-system-list {
-  margin-right: 40px;
-}
-
-.lead-story .lead-story-wrapper .lead-story-content .coinzar-system .coinzar-system-list:last-child {
-  margin-right: 0;
-}
-
-.lead-story .lead-story-wrapper .lead-story-content .coinzar-system .coinzar-system-list .coinzar-system-title {
-  margin-top: 10px;
-}
-
 .main-footer {
   background-color: #000000;
 }
@@ -11361,7 +11345,6 @@ p {
   max-width: 250px;
   width: 100%;
 }
-
 
 .main-footer .footer-wrapper ul {
   margin-bottom: 33px;
@@ -11400,16 +11383,9 @@ p {
 
 @media (max-width: 1199.98px) {
   .main-header {
-    padding: 45px 0px;
+    padding: 22px 0px 86px 0;
   }
 
-  .main-header .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {
-    padding: 0 13px;
-  }
-
-  .hero-section .hero-section-wrapper {
-    padding: 80px 0 140px;
-  }
 
   .hero-section .hero-section-wrapper .hero-section-content {
     padding: 0px 0 70px;
@@ -11431,8 +11407,8 @@ p {
 
 @media (max-width: 991.98px) {
 
-  .hero-section .hero-section-wrapper {
-    padding: 70px 0 120px;
+  .hero-section {
+    display: block;
   }
 
   .hero-section .hero-section-wrapper .hero-section-content .heading-title {
@@ -11526,7 +11502,7 @@ p {
   }
 
   .main-header {
-    padding: 25px 0px;
+    padding: 22px 0px 66px 0;
   }
 
   .main-footer .footer-wrapper ul {

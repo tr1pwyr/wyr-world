@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="copyright-text">
-      <p>&copy; 2024 <a href="https://tripkendall.com/">Trip Kendall</a>
+      <p>Created by <a href="https://twitter.com/vic_vacendak">Vic Vacendak</a>
         - Some Rights Reserved.
       </p>
     </div>

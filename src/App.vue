@@ -2,7 +2,6 @@
 import Header from './components/TheHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import TriStories from './components/TriStories.vue'
-import CallToAction from './components/CallToAction.vue'
 import LeadStory from './components/LeadStory.vue'
 import Footer from './components/TheFooter.vue'
 
@@ -31,9 +30,6 @@ const siteData = ref(
   <section class="site-content">
     <HeroSection :siteData="siteData" />
     
-    <div v-if="showCallToAction==true">
-      <CallToAction />
-    </div>
 
     <TriStories />
 

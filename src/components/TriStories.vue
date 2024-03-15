@@ -4,11 +4,10 @@
       <div class="tri-stories-wrapper">
         <div class="section-title text-center">
           <h2 class="title text-uppercase">
-            What The <span class="primary-text">Hell</span>?
+            #<span class="primary-text">cybersecurity</span>
           </h2>
           <p class="mb-0">
-            If you are talking about that list up there it's the <a href="#">Salty Ape Leader Board</a>.
-            It's a list of what's hot. In Life. If you are talking about this site, it's a Vue 3 Template.
+            "Can't believe I'm still seeing default passwords being used on critical systems... Come on people, let's step up our game!"
           </p>
         </div>
 
@@ -55,12 +54,12 @@ const pageData = ref(
       text: 'Leader Board',
     },
     {
-      title: 'Get In Touch',
-      description: 'Click the link below to send me an email.  I\'ll get back to you as soon as I can.  Unless you are a spammer.  Then I won\'t.',
+      title: 'RIP Salty Ape',
+      description: 'Alas the salty ape vue template has been retired.  It did not have nearly as long a life-cycle as front-end.us but if you want to use it at your own risk, you can get it here',
       image: '/images/saltyApe4.webp',
       imageAlt: 'Salty Ape is Vue 3 Template',
-      link: 'mailto:ape@saltyape.com',
-      text: 'Contact',
+      link: 'https://github.com/TripKendall/salty-ape',
+      text: 'Salty Ape Repository',
     }
   ]
 )
