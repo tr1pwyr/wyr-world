@@ -10,26 +10,24 @@
           </div>
           <div class="col-lg-6">
             <div class="lead-story-content text-center text-lg-start">
-              <h6 class="small-title text-uppercase fs-7">Salty Ape's</h6>
+              <h6 class="small-title text-uppercase">vic vacendak's</h6>
               <h2 class="title text-uppercase"><span class="primary-text">
-                  Leader
-                </span> Board</h2>
+                 Network </span>Security</h2>
               <p class="text">
-                I'm collecting and tracking data for another project.
-                I thought it would be fun to share the data on the Salty Ape Leader Board.
-                It's a list of what's hot. In Life.
+                From robust firewall configurations and intrusion detection systems to advanced threat 
+                intelligence and continuous vulnerability assessments, leave no stone unturned in 
+                fortifying your network against cyber threats. 
               </p>
               <p>
-                The quality and availability of the data will fluctuate as I work on the 
-                other project.  Right now the *data* is just a javascript object in the 
-                <code>src/js</code> directory.  I'll be adding the fetch call when the
-                api is live.
+                An experienced security professional 
+                stays ahead of emerging trends and evolving attack vectors, ensuring their defenses are
+                 always one step ahead. My approach to network security is multifaceted:
               </p>
-              <p>
-                The content for this page is in the <code>LeadStory.vue</code> component in 
-                the <code>src/components</code> directory.  The other sections on this page 
-                are in the components directory as well.
-              </p>
+                <ul>
+                  <li>combining cutting-edge technology </li>
+                  <li>proactive monitoring</li>
+                  <li>expert guidance to safeguard your digital assets. </li>
+                </ul>
             </div>
           </div>
         </div>

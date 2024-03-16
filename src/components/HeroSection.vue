@@ -1,18 +1,23 @@
 <template>
   <section class="hero-section">
     <div class="container">
-      <div class="hero-section-content text-center">
+      <div class="hero-section-content">
+
         <img :src="siteData.image" :alt="siteData.subtitle" class="img-fluid">
-        <h2 class="title text-uppercase mb-0">
+       
+        <span>
+          <h2 class="title text-uppercase mb-0">
           Wyr<span class="primary-text">World</span>
         </h2>
         <h3>{{ siteData.subtitle }}</h3>
         <p class="text">{{ siteData.description }}</p>
         <p>
           <a @click="show = !show" class="show-info">
-            Toggle Info...
+            Toggle Template Info...
           </a>
         </p>
+        </span>
+
       </div>
     </div>
 
@@ -52,19 +57,3 @@ onMounted(() => {
 });
 
 </script>
-
-
-<style scoped>
-.show-info {
-  cursor:pointer;
-  text-decoration: none;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

@@ -13,7 +13,7 @@
 }
 
 :root {
-  --bs-blue: #ff7000;
+  --bs-blue: #44addf;
   --bs-indigo: #44addf;
   --bs-purple: #44addf;
   --bs-pink: #b07cd7;
@@ -95,7 +95,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 
 hr {
   margin: 1rem 0;
@@ -11192,6 +11191,18 @@ fieldset:disabled .btn {
 
 /* Here we go... */
 
+.show-info {
+  cursor:pointer;
+  text-decoration: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 .main-header {
   background-color: var(--bs-body-bg);
@@ -11212,12 +11223,21 @@ fieldset:disabled .btn {
 
 /* When the screen is big have the more info side by side */
 .hero-section {
-  text-align: center;
-  margin: 133px 1rem 0 1rem;
-  padding: 1rem 3rem;
+  margin: 133px 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero-section-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section img {
+  margin-right: 1rem !important;
 }
 
 .title .primary-text {
@@ -11233,24 +11253,16 @@ p {
   color: #fefefe;
 }
 
+.half {
+  width: 50%;
+}
+
 .site-content {
   overflow: hidden;
 }
 
-.download-button-wrapper {
-  margin: 0 50px 0 0 !important;
-}
-
-.gray-link {
-  color: #323342 !important;
-}
-
-.gray-link:hover {
-  color: #ff7000 !important;
-}
-
 .tri-stories {
-  padding: 78px 0 158px;
+  padding: 66px 0 99px;
 }
 
 .tri-stories .tri-stories-wrapper .section-title {
@@ -11266,15 +11278,20 @@ p {
   margin-bottom: 15px;
 }
 
-.tri-stories .tri-stories-wrapper .work-fetures .work-fetures-img {
+.tri-features-img {
   margin-bottom: 10px;
+  opacity: .66;
 }
 
-.tri-stories .tri-stories-wrapper .work-fetures .work-fetures-content {
+.tri-features-img:hover {
+  opacity: 1;
+}
+
+.tri-features-content {
   padding: 0 15px;
 }
 
-.tri-stories .tri-stories-wrapper .work-fetures .work-fetures-content .feture-title {
+.tri-stories .tri-stories-wrapper .tri-features .tri-features-content .tri-title {
   letter-spacing: 0.01em;
   line-height: 40px;
   font-weight: 700;
@@ -11287,6 +11304,7 @@ p {
   padding: 0 0 0 66px;
   border-radius: 2rem;
   background: rgba(0,0,0,0);
+  text-align: right;
 }
 
 .call-to-action .call-to-action-wrapper .call-to-action-content .title {
@@ -11294,16 +11312,22 @@ p {
   font-weight: 900;
   letter-spacing: 0.01em;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: right;
 }
 
 .call-to-action .call-to-action-wrapper .call-to-action-content .text {
-  max-width: 560px;
   width: 100%;
   margin-bottom: 26px;
+  text-align: right;
+}
+
+.call-to-action p, .call-to-action .small-title, .call-to-action .btn-primary {
+  text-align: right;
 }
 
 .lead-story {
-  padding: 111px 0 90px;
+  padding: 99px 0 99px;
 }
 
 .lead-story .lead-story-wrapper .lead-story-img {
@@ -11329,8 +11353,9 @@ p {
   margin-bottom: 7px;
 }
 
-.lead-story .lead-story-wrapper .lead-story-content .text {
+.lead-story .lead-story-wrapper .lead-story-content .text, .call-to-action-content .text {
   margin-bottom: 29px;
+  color:#626262;
 }
 
 .main-footer {
@@ -11342,7 +11367,7 @@ p {
 }
 
 .main-footer .footer-wrapper .footer-logo-content {
-  max-width: 250px;
+  max-width: 133px;
   width: 100%;
 }
 
@@ -11407,18 +11432,23 @@ p {
 
 @media (max-width: 991.98px) {
 
-  .hero-section {
+  .hero-section, .hero-section-content {
     display: block;
+    text-align: center;
   }
 
   .hero-section .hero-section-wrapper .hero-section-content .heading-title {
     white-space: normal !important;
   }
 
-  .tri-stories .tri-stories-wrapper .work-fetures {
-    margin-bottom: 50px;
+  .hero-section img {
+    margin-right: none !important;
+    margin-bottom: 1rem;
   }
 
+  .tri-stories .tri-stories-wrapper .tri-features {
+    margin-bottom: 50px;
+  }
 
   .tri-stories {
     padding: 58px 0 70px;
@@ -11449,21 +11479,12 @@ p {
     max-width: 100%;
   }
 
-
-  .main-footer .footer-wrapper {
-    padding: 75px 0 10px;
-  }
-
-  .main-footer .footer-wrapper .footer-contact-us {
-    padding-left: 0;
-  }
-
   .main-footer .copyright-text {
     padding: 25px 0;
   }
 
   .footer-logo{
-    margin-bottom: 30px;
+    display:none;
   }
 
   .main-footer .footer-wrapper ul {

@@ -6,13 +6,15 @@
         <LatestTweets />
 
         <div class="row">
-          <div v-for="data in pageData" :key="data.title" class="col-lg-4">
-            <div class="work-fetures text-center">
-              <div class="work-fetures-img">
+          <div v-for="data in triStoriesData" :key="data.title" class="col-lg-4">
+            <div class="tri-features text-center">
+              <div class="tri-features-img">
+                <a :href="data.link">
                 <img :src="data.image" :alt="data.title" class="half">
+                </a>
               </div>
-              <div class="work-fetures-content">
-                <h3 class="feture-title">{{ data.title }}</h3>
+              <div class="tri-features-content">
+                <h3 class="tri-title">{{ data.title }}</h3>
                 <p class="mb-0">{{ data.description }}</p>
                 <a :href="data.link" class="btn btn-primary mt-3">
                   {{ data.text }}
@@ -21,47 +23,13 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref} from 'vue'
+import { triStoriesData } from '../js/TriStoriesData';
 import LatestTweets from './LatestTweets.vue'
-
-const pageData = ref(
-  [
-    {
-      title: 'The Vue 3 Template',
-      description: 'You can download the Vue 3 Template from the link below.  It\'s free.  It\'s open source.  It\'s simple.',
-      image: '/images/saltyApe3.webp',
-      imageAlt: 'Salty Ape is Vue 3 Template',
-      link: 'https://github.com/TripKendall/salty-ape',
-      text: 'Download',
-    },
-    {
-      title: 'The Leader Board',
-      description: 'Have a link you want to share?  Want to see what\'s hot?  Check out the Leader Board.  It\'s a list of what\'s hot.  In Life.',
-      image: '/images/saltyApe5.webp',
-      imageAlt: 'Salty Ape is Vue 3 Template',
-      link: '#leader-board',
-      text: 'Leader Board',
-    },
-    {
-      title: 'RIP Salty Ape',
-      description: 'Alas the salty ape vue template has been retired.  It did not have nearly as long a life-cycle as front-end.us but if you want to use it at your own risk, you can get it here',
-      image: '/images/saltyApe4.webp',
-      imageAlt: 'Salty Ape is Vue 3 Template',
-      link: 'https://github.com/TripKendall/salty-ape',
-      text: 'Salty Ape Repository',
-    }
-  ]
-)
 </script>
-
-<style scoped>
-.half {
-  width: 50%;
-}
-</style>
