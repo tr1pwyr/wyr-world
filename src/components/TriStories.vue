@@ -2,14 +2,8 @@
   <section class="tri-stories" id="what">
     <div class="container">
       <div class="tri-stories-wrapper">
-        <div class="section-title text-center">
-          <h2 class="title text-uppercase">
-            #<span class="primary-text">cybersecurity</span>
-          </h2>
-          <p class="mb-0">
-            "Can't believe I'm still seeing default passwords being used on critical systems... Come on people, let's step up our game!"
-          </p>
-        </div>
+        
+        <LatestTweets />
 
         <div class="row">
           <div v-for="data in pageData" :key="data.title" class="col-lg-4">
@@ -33,7 +27,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref} from 'vue'
+import LatestTweets from './LatestTweets.vue'
 
 const pageData = ref(
   [
